@@ -22,7 +22,7 @@ body{
 }
 .btn-primary{
     height: 50px;
-    width: 210px;
+    width: 180px;
     border-radius: 45px;
     color: rgb(255, 255, 255);
     font-size: 17px;
@@ -87,7 +87,7 @@ p{
 }
 .btn-download{
     height: 50px;
-    width: 210px;
+    width: 180px;
     border-radius: 45px;
     color: rgb(255, 255, 255);
     font-size: 17px;
@@ -100,16 +100,43 @@ p{
     justify-content: space-between;
 }
 .banner-content{
-    max-width: 580px;
+    max-width: 480px;
     margin-bottom: 20px;
 }
 .banner-content h1{
-    font-size: 75px;
+    font-size: 60px;
     line-height: 120%;
     font-weight: 900;
+    width: 80%;
     margin-bottom: 25px;
 }
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column;
+    }
+    .nav-links, .navbar{
+        display: none;
+    }
+    .banner-content h1{
+        width: 285px;
+        font-size: 45px;
+    }
+    .banner-content p{
+        width: 270px;
+    }
+    .banner-button{
+        justify-content: space-around;
+    }
+    .navbar, .banner-content{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
