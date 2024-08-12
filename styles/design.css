@@ -58,7 +58,6 @@ p{
     margin-top: 60px;
     height: 40px;
     width: 390px;
-    /* padding-right: 10px; */
     padding-left: 3px;
     border: 0.001px solid rgba(245, 245, 245, 0.11);
     border-radius: 45px;
@@ -72,12 +71,8 @@ p{
     background-color: rgb(230, 83, 60);
     border-radius: 45px;
     color: rgb(255, 255, 255);
-    /* text-align: center; */
     font-weight: 600;
     font-size: 17px;
-    /* line-height: 20px;
-    padding: 0px 15px;
-    border: none; */
 }
 /* banner styles */
 .header p{
@@ -94,7 +89,6 @@ p{
     font-weight: 600;
     border: 0.01px solid white;
     background-color: unset;
-    /* margin-left: 20px; */
 }
 .banner{
     justify-content: space-between;
@@ -117,7 +111,6 @@ p{
 
 /* main section */
 main{
-    /* width: 1450px; */
     margin: 0 auto;
     background-color: black;
 }
@@ -126,14 +119,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 1050px;
-    margin: 0 auto;
-    align-items: center; */
-    /* height: 720px; */
-    /* padding: 80px 0; */
-    /* margin-bottom: 40px; */
-    /* border: 1px solid red; */
-    /* background-color: black; */
 }
 .changes h2,h6,p{
     color: rgb(255, 255, 255);
@@ -141,7 +126,7 @@ main{
 .Change-heading{
     margin-top: 70px;
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 800;
 }
 .changes h6{
@@ -156,15 +141,13 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.texting h2{
-    font-size: 45px;
+    line-height: 60px;
 }
 .texting p{
     font-size: smaller;
     text-align: center;
     opacity: 0.4;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 70px;
 }
 .cards{
@@ -173,12 +156,11 @@ main{
     align-items: center;
 }
 .card-style{
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-left: 30px; */
+    line-height: 20px;
 }
 .card-style img{
     border-radius: 50%;
@@ -218,5 +200,14 @@ main{
     }
     /* main */
     /* change section */
-    
+    .cards{
+        flex-direction: column;
+    }
+    .Change-heading{
+        width: 330px;
+        font-size: 35px;
+    }
+    .texting p{
+        width: 295px;
+    }
 }
