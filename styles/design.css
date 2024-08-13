@@ -37,10 +37,6 @@ p{
 .header{
     background: linear-gradient(180deg, rgb(17,17,17), rgba(48,48,48, 1),rgba(41, 41, 41, 1),rgb(5,5,5) 100% );
 }
-/* .header-content{
-    width: 1250px;
-    margin: 0 auto;
-} */
 /* navbar styles */
 .navbar{
     justify-content: space-between;
@@ -253,6 +249,38 @@ main{
     width: 100%;
     height: 100%;
 }
+/* Footer section  */
+footer{
+    background-color: rgba(48,48,48, 1);
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    width: 1150px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.fitness-part{
+    width: 40%;
+    line-height: 10px;
+    margin-top: 10px;
+}
+.fitness-part h2{
+    font-size: 50px;
+    font-style: italic;
+}
+.fitness-part p{
+    text-align: left;
+}
+.footer h3{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.footer p{
+    opacity: 0.4;
+    font-size: 18px;
+}
 
 
 /* responsive media query */
@@ -321,5 +349,14 @@ main{
     .meet-img{
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
+    }
+    /* Footer section */
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .fitness-part{
+        width: 95%;
     }
 }
