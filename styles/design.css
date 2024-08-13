@@ -36,6 +36,11 @@ p{
 /* header styles */
 .header{
     background: linear-gradient(180deg, rgb(17,17,17), rgba(48,48,48, 1),rgba(41, 41, 41, 1),rgb(5,5,5) 100% );
+    width: 100%;
+}
+.header-content{
+    width: 1250px;
+    margin: 0 auto;
 }
 /* navbar styles */
 .navbar{
@@ -167,11 +172,85 @@ main{
 }
 .card-style p{
     font-size: smaller;
-    width: 80%;
+    width: 70%;
     text-align: center;
     margin-bottom: 100px;
     opacity: 0.4;
     line-height: 20px;
+}
+/* Run extra section  */
+.run-extra{
+    width: 1150px;
+    height: 330px;
+    background-color: rgba(48,48,48, 1);
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    gap: 20%;
+    line-height: 120%;
+}
+.run-extra img{
+    border-radius: 20px;
+    width: 35%;
+    height: 100%;
+}
+.text-cont{
+    /* padding-top: 15px; */
+    color: rgb(255, 255, 255);
+    width: 45%;
+    /* margin-bottom: 20px; */
+}
+.text-cont>h2{
+    width: 350px;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 120%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-cont>p{
+    opacity: 0.4;
+    width: 400px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-size: smaller;
+}
+/* Meet section  */
+.meet-team{
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 1150px;
+}
+.meet-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.meet-text h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.meet-text p{
+    opacity: 0.4;
+    font-size: smaller;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.meet-img{
+    background-color: rgba(48,48,48, 1);
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.meet-img img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -209,5 +288,32 @@ main{
     }
     .texting p{
         width: 295px;
+    }
+    /* Run extra section */
+    .run-extra{
+        width: 78%;
+        height: 580px;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .run-extra p{
+        width: 100%;
+    }
+    .run-extra h2{
+        width: 84%;
+        font-size: 33px;
+    }
+    .run-button{
+        width: 100%;
+    }
+    .text-cont{
+        width: 97%;
+        align-items: center;
+    }
+    .run-extra img{
+        width: 97%;
+        height: 40%;
     }
 }
