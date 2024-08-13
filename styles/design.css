@@ -36,12 +36,11 @@ p{
 /* header styles */
 .header{
     background: linear-gradient(180deg, rgb(17,17,17), rgba(48,48,48, 1),rgba(41, 41, 41, 1),rgb(5,5,5) 100% );
-    width: 100%;
 }
-.header-content{
+/* .header-content{
     width: 1250px;
     margin: 0 auto;
-}
+} */
 /* navbar styles */
 .navbar{
     justify-content: space-between;
@@ -221,7 +220,7 @@ main{
     display: flex;
     flex-direction: column;
     margin: 40px auto;
-    width: 1150px;
+    /* width: 1150px; */
 }
 .meet-text{
     display: flex;
@@ -246,6 +245,8 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    width: 1150px;
+    margin: 0 auto;
 }
 .meet-img img{
     border-radius: 20px;
@@ -315,5 +316,10 @@ main{
     .run-extra img{
         width: 97%;
         height: 40%;
+    }
+    /* Meet section  */
+    .meet-img{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
     }
 }
