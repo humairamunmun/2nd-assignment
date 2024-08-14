@@ -41,6 +41,13 @@ p{
 .navbar{
     justify-content: space-between;
 }
+.nav-bar{
+    align-items: center;
+}
+.hamburger-menu{
+    color: white;
+    display: none;
+}
 .nav-item{
     list-style: none;
     margin-right: 30px;
@@ -55,7 +62,7 @@ p{
     font-weight: 500;
 }
 .nav-links{
-    margin-top: 60px;
+    margin-top: 30px;
     height: 40px;
     width: 390px;
     padding-left: 3px;
@@ -286,10 +293,13 @@ footer{
 /* responsive media query */
 @media screen and (max-width: 576px) {
     /* header section */
+    .hamburger-menu{
+        display: block;
+    }
     .banner{
         flex-direction: column;
     }
-    .nav-links, .navbar{
+    .nav-links{
         display: none;
     }
     .banner-content h1{
